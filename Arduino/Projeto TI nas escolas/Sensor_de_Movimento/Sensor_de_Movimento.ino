@@ -29,8 +29,8 @@ void loop()
       digitalWrite(pinoLED2, LOW); // APAGA O LED 2
       digitalWrite(pinoLED3, LOW); // APAGA O LED 3
       digitalWrite(pinoLED4, LOW); // APAGA O LED 4
-      digitalWrite(pinoBUZ, LOW),  // DESLIGA O BUZZZER
-          delay(200);
+      digitalWrite(pinoBUZ, LOW);  // DESLIGA O BUZZZER
+      delay(200);
       digitalWrite(pinoLED1, HIGH); // ACENDE O LED 1
       digitalWrite(pinoLED2, HIGH); // ACENDE O LED 2
       digitalWrite(pinoLED3, HIGH); // ACENDE O LED 3
