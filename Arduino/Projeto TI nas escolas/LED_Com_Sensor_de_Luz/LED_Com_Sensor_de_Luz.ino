@@ -1,4 +1,4 @@
-int LDR = 2; // Pino do LDR
+int LDR = A0; // Pino do LDR
 int LED = 3; // Pino do LEd
 
 void setup() {
@@ -7,7 +7,7 @@ void setup() {
 }
 
 void loop() {
-    if (analogRead(LDR) < 800) { //Le o valor analogico do LDR e compara com um limite(800)
+    if (analogRead(LDR) < 270) { //Le o valor analogico do LDR e compara com um limite(800)
         digitalWrite(LED, HIGH); //Se verdadeiro Ligue o LED
     }
     else {
