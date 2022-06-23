@@ -2,7 +2,7 @@ const int Buz = 4;
 int But = 3;
 
 void setup() {
-  //fa,fa,pausa,fa,mi,mi,re,do,re,re,mi,fa,si,do,re,mi,mi,re,do,la,la,sol
+  //fa#,fab,pausa,re,mi,    fab,mi,re,do#,,re,mi,   fa#,siM,si,do#,re,mi,re,do#,laM,laM,solM
   // put your setup code here, to run once:
   pinMode(Buz, OUTPUT);
   pinMode(But, INPUT);
