@@ -1,25 +1,60 @@
 const int Buz = 4;
-int But = 3;
 
-void setup() {
-  //fa#,fab,pausa,re,mi,    fab,mi,re,do#,,re,mi,   fa#,siM,si,do#,re,mi,re,do#,laM,laM,solM
-  // put your setup code here, to run once:
+void setup()
+{
   pinMode(Buz, OUTPUT);
-  pinMode(But, INPUT);
-
 }
 
-void loop() {
-  
-  if ( digitalRead(But) == HIGH){
-    
-    tone(Buz, 743);
-    delay(1000);
-    tone(Buz, 743);
-    delay(1000);
-    noTone(Buz);
-    delay(800);
-    
-  }
+void loop()
+{
 
+  noTone(Buz);
+  delay(2000);
+  tone(Buz, 743); // Fa#
+  delay(1000);
+  tone(Buz, 701); // Fa
+  delay(1200);
+  noTone(Buz);
+  delay(500);
+  tone(Buz, 589); // re
+  delay(250);
+  tone(Buz, 663); // mi
+  delay(250);
+  tone(Buz, 701); // fa
+  delay(700);
+  tone(Buz, 663); // mi
+  delay(700);
+  tone(Buz, 589); // re
+  delay(500);
+  tone(Buz, 557); // do#
+  delay(700);
+  tone(Buz, 589); // re
+  delay(700);
+  tone(Buz, 663); // mi
+  delay(500);
+  tone(Buz, 743); // Fa#
+  delay(1200);
+  tone(Buz, 1000); // SiM
+  delay(1500);
+  tone(Buz, 497); // Si
+  delay(500);
+  tone(Buz, 557); // do#
+  delay(500);
+  tone(Buz, 589); // re
+  delay(700);
+  tone(Buz, 663); // mi
+  delay(750);
+  tone(Buz, 589); // re
+  delay(500);
+  tone(Buz, 557); // do#
+  delay(700);
+  tone(Buz, 887); // Lam
+  delay(700);
+  tone(Buz, 792); // SolM
+  delay(500);
+  tone(Buz, 743); // Fa#
+  delay(1000);
+  tone(Buz, 701); // Fa
+  noTone(Buz);
+  delay(1200);
 }
