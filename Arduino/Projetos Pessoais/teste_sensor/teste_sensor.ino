@@ -1,4 +1,5 @@
 #include <ESP8266WiFi.h>
+#include <WiFiClient.h>
 #include <ESP8266WebServer.h>
 #include <DHT.h>
 
@@ -14,7 +15,7 @@ const char* password = "UFRN@1306";  //Enter Password here
 ESP8266WebServer server(80);
 
 // DHT Sensor
-uint8_t DHTPin = 15; 
+uint8_t DHTPin = 4; 
                
 // Initialize DHT sensor.
 DHT dht(DHTPin, DHTTYPE);                
@@ -53,7 +54,6 @@ void setup() {
 
 }
 void loop() {
-  
   server.handleClient();
   
 }
