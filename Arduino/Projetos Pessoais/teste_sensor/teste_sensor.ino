@@ -19,7 +19,7 @@ const char* password = "UFRN@1306"; //Enter your WIFI password
 
 // Timer variables
 unsigned long lastTime = 0;
-unsigned long timerDelay = 30000;
+unsigned long timerDelay = 360000;
 
 // Variable to hold temperature readings
 float temperatureC;
